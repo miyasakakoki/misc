@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SITE="http://www.gaitameonline.com/rateaj/chartjson/USDJPY_i_bid.json"
+SITE="rateaj/chartjson/USDJPY_i_bid.json"
 while sleep 3600; do
 	curl -s ${SITE} |
 		sed -n -e "s/\"currency[^,]*,//; s/yyyyMMddHHmm/time/g; 1d; \$d; /\]/d; p" |
