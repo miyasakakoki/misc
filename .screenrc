@@ -1,0 +1,3 @@
+hardstatus alwayslastline "%Y/%m/%d(%D) %c:%s %-w%{=b bw}%n %t%{-}%+w"
+vbell off
+autodetach on
